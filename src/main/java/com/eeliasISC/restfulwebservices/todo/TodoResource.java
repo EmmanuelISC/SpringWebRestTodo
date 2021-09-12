@@ -53,6 +53,7 @@ public class TodoResource {
 		return ResponseEntity.notFound().build();
 	} 
 	
+	//Update put methos rest verb from backend side to can be cosume by front-end side
 	@PutMapping("/users/{username}/todos/{id}")
 	public ResponseEntity<Todo> updateTodo(@PathVariable String username, @PathVariable long id, @RequestBody Todo todo){
 		Todo todoUpdated = todoService.save(todo);
