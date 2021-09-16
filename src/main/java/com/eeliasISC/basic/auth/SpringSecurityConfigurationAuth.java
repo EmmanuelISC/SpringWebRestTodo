@@ -1,4 +1,4 @@
-package com.eeliasISC.restfulwebservices.basic.auth;
+package com.eeliasISC.basic.auth;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
