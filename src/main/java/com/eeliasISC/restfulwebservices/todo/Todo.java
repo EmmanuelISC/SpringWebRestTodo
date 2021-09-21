@@ -2,6 +2,7 @@ package com.eeliasISC.restfulwebservices.todo;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,10 +13,13 @@ public class Todo {
 	@Id
 	@GeneratedValue
 	private Long id;
-	
+	@Column
 	private String username;
+	@Column
 	private String description;
+	@Column
 	private Date targetDate;
+	@Column
 	private boolean isDone;
 	
 	
